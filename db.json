@@ -9,6 +9,8 @@
             "imageAlt": "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
             "category": "New Arrivals",
             "brand": "Brand A",
+            "categoryValue": "new-arrivals",
+            "brandValue": "brandA",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -20,6 +22,8 @@
             "imageAlt": "Olive drab green insulated bottle with flared screw lid and flat top.",
             "category": "Sale",
             "brand": "Brand B",
+            "categoryValue": "sale",
+            "brandValue": "brandB",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -31,6 +35,8 @@
             "imageAlt": "Person using a pen to cross a task off a productivity paper card.",
             "category": "Travel",
             "brand": "Brand C",
+            "categoryValue": "travel",
+            "brandValue": "brandC",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -42,6 +48,8 @@
             "imageAlt": "Hand holding black machined steel mechanical pencil with brass tip and top.",
             "category": "Organization",
             "brand": "Brand A",
+            "categoryValue": "organization",
+            "brandValue": "brandA",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -53,6 +61,8 @@
             "imageAlt": "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
             "category": "Accessories",
             "brand": "Brand B",
+            "categoryValue": "accessories",
+            "brandValue": "brandB",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -64,6 +74,8 @@
             "imageAlt": "Olive drab green insulated bottle with flared screw lid and flat top.",
             "category": "Accessories",
             "brand": "Brand C",
+            "categoryValue": "accessories",
+            "brandValue": "brandC",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -75,6 +87,8 @@
             "imageAlt": "Person using a pen to cross a task off a productivity paper card.",
             "category": "Organization",
             "brand": "Brand A",
+            "categoryValue": "organization",
+            "brandValue": "brandA",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -86,6 +100,8 @@
             "imageAlt": "Hand holding black machined steel mechanical pencil with brass tip and top.",
             "category": "Travel",
             "brand": "Brand B",
+            "categoryValue": "travel",
+            "brandValue": "brandB",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -97,6 +113,8 @@
             "imageAlt": "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
             "category": "New Arrivals",
             "brand": "Brand C",
+            "categoryValue": "new-arrivals",
+            "brandValue": "brandC",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -108,6 +126,8 @@
             "imageAlt": "Olive drab green insulated bottle with flared screw lid and flat top.",
             "category": "Sale",
             "brand": "Brand A",
+            "categoryValue": "sale",
+            "brandValue": "brandA",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -119,6 +139,8 @@
             "imageAlt": "Person using a pen to cross a task off a productivity paper card.",
             "category": "Travel",
             "brand": "Brand B",
+            "categoryValue": "travel",
+            "brandValue": "brandB",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -130,6 +152,8 @@
             "imageAlt": "Hand holding black machined steel mechanical pencil with brass tip and top.",
             "category": "Organization",
             "brand": "Brand B",
+            "categoryValue": "organization",
+            "brandValue": "brandB",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -141,6 +165,8 @@
             "imageAlt": "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
             "category": "Accessories",
             "brand": "Brand C",
+            "categoryValue": "accessories",
+            "brandValue": "brandC",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -152,6 +178,8 @@
             "imageAlt": "Olive drab green insulated bottle with flared screw lid and flat top.",
             "category": "Accessories",
             "brand": "Brand A",
+            "categoryValue": "accessories",
+            "brandValue": "brandA",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -163,6 +191,8 @@
             "imageAlt": "Person using a pen to cross a task off a productivity paper card.",
             "category": "Organization",
             "brand": "Brand B",
+            "categoryValue": "organization",
+            "brandValue": "brandB",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
@@ -174,6 +204,8 @@
             "imageAlt": "Hand holding black machined steel mechanical pencil with brass tip and top.",
             "category": "Travel",
             "brand": "Brand C",
+            "categoryValue": "travel",
+            "brandValue": "brandC",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         }
     ]
