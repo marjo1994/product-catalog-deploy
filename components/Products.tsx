@@ -21,7 +21,7 @@ const filters = [
     options: [
       { value: 'brandA', label: 'Brand A', checked: false },
       { value: 'brandB', label: 'Brand B', checked: false },
-      { value: 'brandC', label: 'Brand C', checked: false },
+      { value: 'brandC', label: 'Brand C', checked: true },
       
     ],
   },
@@ -31,7 +31,7 @@ const filters = [
     options: [
       { value: 'new-arrivals', label: 'New Arrivals', checked: false },
       { value: 'sale', label: 'Sale', checked: false },
-      { value: 'travel', label: 'Travel', checked: false },
+      { value: 'travel', label: 'Travel', checked: true },
       { value: 'organization', label: 'Organization', checked: false },
       { value: 'accessories', label: 'Accessories', checked: false },
     ],
@@ -39,35 +39,7 @@ const filters = [
 ]
 
 export default function Products() {
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-  const [selectedBrand, setSelectedBrand] = useState<string[]>([])
-  const [selectedCategory, setSelectedCategory] = useState<string[]>([])
-
-  const handleFilterChange = (filterType: 'brand' | 'category', value: string) => {
-    const newFilters = filterType === 'brand' ? [...selectedBrand] : [...selectedCategory]
-    const index = newFilters.indexOf(value)
-
-    if (index === -1) {
-      newFilters.push(value)
-    } else {
-      newFilters.splice(index, 1)
-    }
-
-     // Log the new filters array to see the updated list of selected values
-     console.log(`Updated ${filterType} filter:`, newFilters);
-
-
-    if (filterType === 'brand') {
-      setSelectedBrand(newFilters)
-    } else {
-      setSelectedCategory(newFilters)
-    }
-
-      // Log the final selected options for both brand and category
-      console.log('Selected Brand:', selectedBrand);
-      console.log('Selected Category:', selectedCategory);
-  }
-
+    const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
     return (
       <div>
         <div>
@@ -119,8 +91,6 @@ export default function Products() {
                                     id={`filter-mobile-${section.id}-${optionIdx}`}
                                     name={`${section.id}[]`}
                                     type="checkbox"
-                                    checked={section.id === 'brand' ? selectedBrand.includes(option.value) : selectedCategory.includes(option.value)}
-                                    onChange={() => handleFilterChange(section.id as 'brand' | 'category', option.value)}
                                     className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                   />
                                   <svg
@@ -204,10 +174,10 @@ export default function Products() {
                               <div className="flex h-5 shrink-0 items-center">
                                 <div className="group grid size-4 grid-cols-1">
                                   <input
+                                    defaultValue={option.value}
+                                    defaultChecked={option.checked}
                                     id={`filter-${section.id}-${optionIdx}`}
                                     name={`${section.id}[]`}
-                                    checked={section.id === 'brand' ? selectedBrand.includes(option.value) : selectedCategory.includes(option.value)}
-                                    onChange={() => handleFilterChange(section.id as 'brand' | 'category', option.value)}
                                     type="checkbox"
                                     className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                   />
@@ -246,7 +216,7 @@ export default function Products() {
   
                 {/* Product grid */}
                 <div className="lg:col-span-3">
-                    <ListOfProducts selectedBrand={selectedBrand} selectedCategory={selectedCategory}></ListOfProducts>
+                    <ListOfProducts></ListOfProducts>
                 </div>
               </div>
             </section>

@@ -9,26 +9,12 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from "react";
 
-interface ListOfProductsProps {
-  selectedBrand: string[];
-  selectedCategory: string[];
-}
-
-export default function ListOfProducts({
-  selectedBrand,
-  selectedCategory,
-}: ListOfProductsProps) {
+export default function ListOfProducts() {
     const { data : products, error, status, fetchNextPage, hasNextPage,
-    isFetchingNextPage } =
+      isFetchingNextPage } =
     useInfiniteQuery({
       queryKey: ['products'],
-      queryFn: ({ pageParam }) => getProducts({
-        pageParam,
-        filters: {
-          brand: selectedBrand,
-          category: selectedCategory,
-        },
-      }),
+      queryFn: getProducts,
       initialPageParam: 1,
       getNextPageParam: (lastPage) => {
         const nextPage =
@@ -45,7 +31,7 @@ export default function ListOfProducts({
       }
     }, [inView, fetchNextPage, hasNextPage]);
 
-    console.log(products,'dataTest');
+    //console.log(products,'dataTest');
 
     return status === 'pending' ? (
       <div><Loading/></div>
