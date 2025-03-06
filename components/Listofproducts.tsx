@@ -4,7 +4,7 @@ import { getProducts } from "@/services/products";
 import Image from "next/image";
 import Link from "next/link";
 import Loading from "./Loading";
-import { Product } from '../types/types';
+import { Product } from '../types/Product';
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from "react";
@@ -18,7 +18,7 @@ export default function ListOfProducts() {
       initialPageParam: 1,
       getNextPageParam: (lastPage) => {
         const nextPage =
-          lastPage.next ? lastPage.next : null;
+        lastPage.pagination.next ? lastPage.pagination.next : null;
         return nextPage;
       },
     });
@@ -31,7 +31,7 @@ export default function ListOfProducts() {
       }
     }, [inView, fetchNextPage, hasNextPage]);
 
-    //console.log(products,'dataTest');
+    console.log(products,'dataTest');
 
     return status === 'pending' ? (
       <div><Loading/></div>
@@ -41,11 +41,11 @@ export default function ListOfProducts() {
     <div>
       <div className="mx-auto max-w-2xl px-4 py-4 sm:px-6 sm:py-4 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">List of products</h2>
-        <div >
-        {products.pages.map((page, index) => {
+        <div>
+          {products.pages.map((page, index) => {
           return (
           <div key={index} className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-             {page.data.map((product: Product) => (
+             {page.items.map((product: Product) => (
               <div key={product.sku} className="group relative">
                 <Image
                 width={280}
@@ -70,9 +70,8 @@ export default function ListOfProducts() {
             ))}
           </div>
         );
-        })}
+        })} 
 
-       
         <div ref={ref}>{isFetchingNextPage && 'Loading...'}</div>
         
         </div>

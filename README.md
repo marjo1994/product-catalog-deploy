@@ -1,7 +1,7 @@
 # Product Catalog
 
 ## Descripcion
-Durante este proyecto se desarrollo un Catalogo de Productos que muestra los elementos disponibles, donde puedes filtrar de acuerdo a la categoria y marca. Así mismo, como se espera incrementar el numero de productos disponibles hemos utilizado Scroll Infinito, la carga inicial se da utilizando Server Side Rendering para obtener un mejor posicionamiento.
+Durante este proyecto se desarrollo un Catalogo de Productos que muestra los elementos disponibles, donde puedes filtrar de acuerdo a la categoria y marca. Así mismo, como se espera incrementar el numero de productos disponibles hemos utilizado Scroll Infinito, la carga inicial se da utilizando Server Side Rendering para obtener un mejor SEO.
 
 Se utilizaron las siguientes tecnologias: Next.js, Tailwind, Typescript, React Query.
 
@@ -24,7 +24,11 @@ Se utilizaron las siguientes tecnologias: Next.js, Tailwind, Typescript, React Q
 
 Abrir el navegador e ir a `http://localhost:3000` para observar el proyecto.
 
-Si desea correr la base de datos ficticia, usted debera correr : npm run json-server
+Si deseas correr la base de datos ficticia `npm run json-server`
+
+La base de datos fue deployada usando Glitch `https://legendary-amber-lion.glitch.me/products`
+
+Este es el repositorio `https://github.com/marjo1994/database-product-catalog`
 
 ## Caracteristicas
 

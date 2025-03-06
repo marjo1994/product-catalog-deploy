@@ -22,16 +22,15 @@
 };*/
 
 export const getProducts = async ({pageParam} : {pageParam : number}) => {
-    const url = `https://product-catalog-deploy-v9yu.vercel.app/api/products?_page=${pageParam}&_per_page=8`;
+    const url = `https://legendary-amber-lion.glitch.me/products?_page=${pageParam}&_per_page=8`;
     const res = await fetch(url);
     const data = await res.json();
     return data;
 };
 
-
 export const getProductbySku = async (sku: string) => {
-    const url = `https://product-catalog-deploy-v9yu.vercel.app/api/products?sku=${sku}`;
+    const url = `https://legendary-amber-lion.glitch.me/products?sku=${sku}`;
     const res = await fetch(url);
     const data = await res.json();
-    return data.length > 0 ? data[0] : null;
+    return data.items[0];
 };

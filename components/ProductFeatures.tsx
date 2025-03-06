@@ -4,7 +4,7 @@ import { getProductbySku } from "@/services/products";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import Loading from "./Loading";
-import { Product } from '../types/types';
+import { Product } from '../types/Product';
 interface ProductDetailsProps {
     productSku: string; // Accept product prop
 }
@@ -20,7 +20,7 @@ const ProductFeatures: React.FC<ProductDetailsProps> = ({ productSku }) => {
     if (isLoading) return <div><Loading/></div>;
     if (error) return <div>Error: {error.message}</div>;
 
-    //console.log(data);
+    console.log(data, 'productInfo');
     return(
         <>
         <div className="grid md:grid-cols-4 md:gap-3 py-4 md:py-8">
